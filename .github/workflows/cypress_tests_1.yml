@@ -6,8 +6,8 @@ jobs:
     runs-on: ubuntu-latest  # Use the latest Ubuntu runner, w chmurze
 
     steps:
-      - uses: actions/checkout@v4 #krok1 zrob checkout repo z ktorego bierzemy kod do testowania
-      - uses: actions/setup-node@v4 #krok2 zainstalu srodowisko node.js, potrzebne do uruchomienia cypressa
+      - uses: actions/checkout@v7 #krok1 zrob checkout repo z ktorego bierzemy kod do testowania
+      - uses: actions/setup-node@v6 #krok2 zainstalu srodowisko node.js, potrzebne do uruchomienia cypressa
         with:
           node-version: 24 #okreslenie wersji node.js - sami okreslamy to
           cache: npm #okreslenie ze chcemy zcacheowac zaleznosci npm, zeby przyspieszyc kolejne uruchomienia
