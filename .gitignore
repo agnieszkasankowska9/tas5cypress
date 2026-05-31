@@ -1,2 +1,9 @@
 node_modules
 npmKlucz
+gotowe_testy
+
+# Cypress artifacts
+
+cypress/screenshots/
+cypress/videos/
+cypress/reports/
