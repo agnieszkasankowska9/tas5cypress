@@ -165,7 +165,7 @@
   "scripts": {
     "test": "cypress open",
     "cy:run": "npx cypress run",
-    "cy:run-cloud": "npx cypress run --record --key 24ca0a10-9b70-4aa5-b004-80979e8b186d",
+    "cy:run-cloud": "npx cypress run --record --key c5bdf9c4-b07c-4f26-a9dd-95f6c29819c5",
     "mytests": "npx cypress run --spec 'cypress/e2e/01test.cy.js'"
   },
   "keywords": [],
