@@ -1,0 +1,19 @@
+name: CypressTests1
+on: [push, workflow_dispatch]
+
+jobs:
+  cypress:
+    runs-on: ubuntu-latest  # Use the latest Ubuntu runner, w chmurze
+
+    steps:
+      - uses: actions/checkout@v4 #krok1 zrob checkout repo z ktorego bierzemy kod do testowania
+      - uses: actions/setup-node@v4 #krok2 zainstalu srodowisko node.js, potrzebne do uruchomienia cypressa
+        with:
+          node-version: 24 #okreslenie wersji node.js - sami okreslamy to
+          cache: npm #okreslenie ze chcemy zcacheowac zaleznosci npm, zeby przyspieszyc kolejne uruchomienia
+      - run: npm ci # uruchom skrypty npm w srodowisku ciaglej intregracji
+      - run: npx cypress open
+      # - run: npm mytests
+
+
+     
